@@ -43,7 +43,7 @@ fn main() {
                 keys.remove(&key);
             }
         });
-        window.draw_2d(&e, |c, g| {
+        window.draw_2d(&e, |c, g, _| {
             if keys.contains(&Key::Left) {
                 car.rot += 0.005
             }
